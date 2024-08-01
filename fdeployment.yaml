@@ -19,7 +19,7 @@ spec:
         - containerPort: 5000
         env:
         - name: GEMINI_API_KEY
-          value: "AIzaSyC-L0P0WsgdBppr5Iwe4NuFu3dv03LGaIU"
+          value: "api key"
 ---
 
 apiVersion: v1
