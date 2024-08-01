@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  flask-app:
+    build:
+      context: ./flask
+    ports:
+      - "5000:5000"
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=nice-plexus-422700-g2-2618a47e78d4.json
+    volumes:
+      - ./flask:/app
+
+  ui:
+    build:
+      context: ./UI
+    ports:
+      - "80:80"
